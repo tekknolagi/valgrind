@@ -31,7 +31,7 @@ static PyObject* callgrind_zero_stats(PyObject* self) {
   Py_RETURN_NONE;
 }
 
-static PyMethodDef callgrind_methods[] = {
+static PyMethodDef valgrind_methods[] = {
     {"callgrind_dump_stats", (PyCFunction)callgrind_dump_stats, METH_VARARGS,
      NULL},
     {"callgrind_start_instrumentation",
@@ -42,19 +42,19 @@ static PyMethodDef callgrind_methods[] = {
      NULL},
     {NULL, NULL, 0, NULL}};
 
-static struct PyModuleDef callgrindmodule = {PyModuleDef_HEAD_INIT, "callgrind",
-                                             NULL, -1, callgrind_methods};
+static struct PyModuleDef valgrindmodule = {PyModuleDef_HEAD_INIT, "valgrind",
+                                             NULL, -1, valgrind_methods};
 
-PyMODINIT_FUNC PyInit_callgrind(void) {
-  PyObject* m = PyState_FindModule(&callgrindmodule);
+PyMODINIT_FUNC PyInit_valgrind(void) {
+  PyObject* m = PyState_FindModule(&valgrindmodule);
   if (m != NULL) {
     Py_INCREF(m);
     return m;
   }
-  m = PyModule_Create(&callgrindmodule);
+  m = PyModule_Create(&valgrindmodule);
   if (m == NULL) {
     return NULL;
   }
-  PyState_AddModule(m, &callgrindmodule);
+  PyState_AddModule(m, &valgrindmodule);
   return m;
 }

@@ -1,17 +1,17 @@
 from distutils.core import setup, Extension
 
-callgrind = Extension(
-    "callgrind",
-    sources=["callgrind.c"],
+valgrind = Extension(
+    "valgrind",
+    sources=["valgrind.c"],
 )
 
 setup(
-    name="callgrind",
+    name="valgrind",
     version="0.0",
     description="Control callgrind instrumentation from Python.",
     author="Max Bernstein",
     author_email="max@bernsteinbear.com",
-    url="https://github.com/tekknolagi/callgrind",
+    url="https://github.com/tekknolagi/valgrind",
     long_description="",
-    ext_modules=[callgrind],
+    ext_modules=[valgrind],
 )
