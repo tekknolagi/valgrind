@@ -1,6 +1,6 @@
 #include <Python.h>
 
-#include "valgrind/callgrind.h"
+#include "callgrind.h"
 
 static PyObject* callgrind_dump_stats(PyObject* self, PyObject* args) {
   const char* description = NULL;
