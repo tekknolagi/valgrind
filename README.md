@@ -1,3 +1,5 @@
+[![PyPI version](https://badge.fury.io/py/valgrind.svg)](https://badge.fury.io/py/valgrind)
+
 # `valgrind`
 
 ## Usage
