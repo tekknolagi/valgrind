@@ -1,3 +1,5 @@
+// Copyright (c) Meta Platforms, Inc. and affiliates. (http://www.meta.com)
+// Originally authored by Matthias Braun.
 #include <Python.h>
 
 #include "callgrind.h"
