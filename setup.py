@@ -2,7 +2,6 @@ from distutils.core import setup, Extension
 
 valgrind = Extension(
     "valgrind",
-    include_dirs=["valgrind"],
     sources=["valgrind.c"],
 )
 

@@ -24,6 +24,12 @@ Run `valgrind --tool=callgrind --instr-atstart=no python3 benchmark.py`.
 See profile in `myprofile` file. Consider opening with KCachegrind or
 QCachegrind.
 
+
+## Test
+
+Run `tox` to build & run tests.
+
+
 ## Authors
 
 Matthias Braun
